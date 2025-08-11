@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Erros no TikTok - Isca Digital</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #000;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+    .container {
+        max-width: 650px;
+        background: rgba(20,20,20,0.95);
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 25px rgba(255,0,50,0.5);
+        text-align: center;
+    }
+    h1 {
+        color: #ff0050;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    form {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    input {
+        padding: 12px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1em;
+        text-align: center;
+    }
+    button {
+        padding: 15px;
+        background: linear-gradient(90deg, #ff0050, #00f2ea);
+        color: white;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    button:hover {
+        opacity: 0.9;
+    }
+    .disclaimer {
+        font-size: 0.85em;
+        color: #aaa;
+        margin-top: 15px;
+    }
+    .hero-img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    .icon-img {
+        width: 60px;
+        margin: 10px;
+    }
+    .tiktok-symbols {
+        font-size: 2em;
+        margin: 15px 0;
+    }
+    .mensagem-agradecimento {
+        display: none;
+        margin-top: 20px;
+    }
+</style>
+<script>
+    function mostrarAgradecimento(event) {
+        event.preventDefault();
+        document.querySelector('form').style.display = 'none';
+        document.querySelector('.mensagem-agradecimento').style.display = 'block';
+    }
+</script>
+</head>
+<body>
+<div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/TikTok_logo.svg/1024px-TikTok_logo.svg.png" alt="TikTok Logo" class="hero-img">
+    <h1>🚀 Descubra os 5 Erros no TikTok</h1>
+    <div class="tiktok-symbols">🎵🎶🎵</div>
+    <p>Baixe gratuitamente o guia que revela os <strong>5 erros que estão te impedindo de ganhar dinheiro</strong> no TikTok e como corrigir hoje mesmo!</p>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/889/889140.png" alt="Erro" class="icon-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828743.png" alt="Crescimento" class="icon-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="Engajamento" class="icon-img">
+    </div>
+    <form onsubmit="mostrarAgradecimento(event)">
+        <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+        <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
+        <input type="tel" name="whatsapp" placeholder="Seu WhatsApp com DDD" required>
+        <button type="submit">QUERO RECEBER AGORA</button>
+    </form>
+    <div class="mensagem-agradecimento">
+        <h2>🎉 Obrigado por se inscrever!</h2>
+        <p>Verifique seu e-mail e também a sua caixa de spam para garantir que recebeu nosso guia.</p>
+    </div>
+    <p class="disclaimer">🔒 Seus dados estão seguros. Não enviamos spam.</p>
+</div>
+</body>
+</html>
